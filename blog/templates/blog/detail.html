@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container">
+        <h3 style="text-align: center;" >{{blog.title}}</h3>
+        {% if blog.image %}
+        <img src="{{blog.image.url}}" width="100%"
+        {% else %}
+        <5>no image available</5>
+        {% endif %}
+        <p style="text-align: center;">         {{blog.created}}
+        </p>
+        <p>{{blog.content}}<p>
+            <hr>
+            <div class="">
+                <div class="col-3">
+                    <img class="auth-img" src="{{blog.image.url}}" width="120px" height="120px" style="border-radius: 100%;">
+                </div>
+                <div class="">
+                    <h2> Author name </h2>
+                    <p>author@email.com</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, earum assumenda tenetur labore voluptate eius harum ab quae natus rem quia .</p>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+{% endblock %}

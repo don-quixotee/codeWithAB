@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container-fluid">
+    <div class="container">
+        <h3>{{tute.name}}</h3>
+        {% for topic in topics %}
+        <h6>{{topic.title}}</h6>
+
+        {% endfor %}
+
+
+    </div>
+</div>
+
+
+{% endblock %}

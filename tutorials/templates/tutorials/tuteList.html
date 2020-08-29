@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+
+    <div class="tuteList">
+        {% for  tute in tutes %}
+        <div class="tute-item">
+<a href="{% url 'tute' tute.id %}">            <h4>{{tute.name}}</h4>
+</a>
+        </div>
+        {% endfor %}
+
+    </div>
+  
+</div>
+
+{% endblock %}
