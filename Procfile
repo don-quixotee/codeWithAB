@@ -1,1 +1,1 @@
-web: gunicorn codewithAb.wsgi
+web: gunicorn <codewithab>.wsgi --log-file -
